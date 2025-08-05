@@ -2,11 +2,10 @@ package com.example.demo3A;
 
 import jakarta.persistence.*;
 
-@Entity
+@Table( name="budget")
 public class Budget {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int Id;
 
     @Column(name = "Estimated_amount")
